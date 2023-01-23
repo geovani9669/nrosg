@@ -1016,26 +1016,6 @@ MoreSection:NewToggle("Lightning Dog Spam", "Spams dogs made of lightning", func
     end
 end)
 
-
-MoreSection:NewToggle("DONT USE PRESS 3 DOTS FOR INFO", "going to use it in the future to use multi stuff at once", function(state)
-    if state then
-        _G.woodragonspam = true
-        _G.blackpf = true
-        while _G.woodragonspam == true and _G.blackpf == true do
-            wait()
-            local A_1 = 1
-            local Event = game:GetService("ReplicatedStorage").woodragon
-            Event:FireServer(A_1)
-            local A_1 = 2
-            local Event = game:GetService("ReplicatedStorage").kb
-            Event:FireServer(A_1)
-        end
-    else
-        _G.woodragonspam = false
-        _G.blackpf = false
-    end
-end)
-
 -- CREDITS
 Credit = Window:NewTab("Credits")
 CreditSection = Credit:NewSection("Made by !$#5525")
